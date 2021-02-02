@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+$blue: rgb(101, 207, 248);
+$text: rgba(12, 12, 12, 0.6);
+
+html  {
+  box-sizing: border-box;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+// btn
+.main_btn {
+  box-sizing: border-box;
+  width: 110px;
+  height: 30px;
+  background: $blue;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 5px;
+  a {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
+    font-style: italic;
+    font-weight: normal;
+  }
+}
+
+
+// header-start//////////
+
+.header_container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  .header_info {
+    height: 20px;
+    background: $blue;
+    // margin-bottom: 0px;
+    .header_info-text {
+      color: #fff;
+      height: 20px;
+    }
+  }
+}
+
+.header_main {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  .header_main-gnav {
+    width: 50px;
+
+
+  }
+  .header_main-img {
+    width: 200px;
+    img {
+      height: 100%;
+    }
+  }
+  .header_main-icon {
+    width: 50px;
+
+  }
+  .header_main-icon {
+    padding-top: 12px;
+    img {
+      color: rgba(12,12,12,0.6);;
+    }
+  }
+
+}
+
+// header-last/////////
+
+// main-img-start////////
+.section_container {
+  margin-bottom: 40px;
+  .main_img {
+    height: 789px;
+    margin-bottom: 20px;
+    text-align: center;
+    img {
+      width: 798px;
+    }
+  }
+  .main_img-text {
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    color: $text;
+    line-height: 30px;
+  }
+}
+.section_container2 {
+  margin-bottom: 50px;
+  .main_img {
+    height: 428px;
+    margin-bottom: 20px;
+    text-align: center;
+    img {
+      width: 630px;
+    }
+  }
+  .main_img-text {
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    color: $text;
+    line-height: 30px;
+  }
+  .main_btn {
+    width: 129px;
+    height: 30px;
+    background: $blue;
+    margin: 0 auto;
+      margin-bottom: 20px;
+
+    border-radius: 5px;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+// main-img-last////////
+
+// item-start///////////
+.ttl {
+  height: 50px;
+  text-align: center;
+  display: block;
+  padding: 20px;
+}
+
+.item-container {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  .items_left {
+    width: 45%;
+    .items_img img {
+      width: 350px;
+    }
+    .items_name, .items_price {
+      height: 20px;
+      text-align: center;
+      margin: 5px;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+    
+    }
+  }
+}
+
+.item-container {
+  text-align: center;
+  margin: 70px 0;
+    .items_center {
+    margin: 0 auto;
+    width: 45%;
+    .items_img img {
+      width: 350px;
+      // height: 350px;
+    }
+    .items_name, .items_price {
+      height: 20px;
+      text-align: center;
+      margin: 5px;
+    }
+  }
+}
+
+
+// スワイパー
+
+
+.sliderArea {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+  margin-bottom: 50px;
+}
+.sliderArea.w300 {
+  max-width: 300px;
+}
+.slick-slide {
+  margin: 0 5px;
+}
+.slick-slide img {
+  width: 200px;
+  height: auto;
+}
+.slick-prev, .slick-next {
+  z-index: 1;
+}
+.slick-prev:before, .slick-next:before {
+  color: #000;
+}
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+.slick-active {
+  opacity: 1;
+}
+.slick-current {
+  opacity: 1;
+}
+.thumb {
+  margin: 20px 0 0;
+}
+.thumb .slick-slide {
+  cursor: pointer;
+}
+.thumb .slick-slide:hover {
+  opacity: .7;
+}
+
+
+
+// フッター
+.footer_text p {
+  font-size: 10px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+// RESPOOOOOON
+
+@media screen and (max-width: 699px){ 
+  .section_container {
+    .main_img {
+      height: 364px;
+      img {
+        width: 375px;
+      }
+    }
+  }
+
+  .section_container2 {
+    .main_img {
+      height: 245px;
+      img {
+        width: 375px;
+      }
+    }
+  }
+
+  .item-container {
+    .items_left {
+      width: 50%;
+      .items_img img {
+        width: 170px;
+      }
+    }
+  }
+
+  .item-container {
+      .items_center {
+      .items_img img {
+        width: 170px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .slick-slide img {
+    width: 100px;
+  }
+  .ttl {
+    height: 26px;
+  }
+
+  .item-container {
+    margin: 0;
+  }  
+}
